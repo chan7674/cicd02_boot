@@ -43,11 +43,11 @@ jobs:
 
       # 7. 빌드된 JAR 파일을 포함한 Docker 이미지 생성
       - name: Docker 이미지 빌드
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/my_nginx .
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/myapp:latest .
 
       # 8. Docker Hub에 이미지 푸시 (EC2에서 사용하기 위해)
       - name: Docker 이미지 푸시
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/my_nginx
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/myapp:latest
 
       # 9. docker-compose.yml 파일을 EC2 서버로 복사
       - name: docker-compose.yml 전송

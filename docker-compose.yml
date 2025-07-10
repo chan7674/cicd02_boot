@@ -2,8 +2,8 @@ version: '3'
 
 services:
   app:
-    image: chan7674/my_nginx
-    container_name: my_nginx
+    image: chan7674/myapp
+    container_name: myapp
     ports:
       - "8080:8080"
     restart: always
