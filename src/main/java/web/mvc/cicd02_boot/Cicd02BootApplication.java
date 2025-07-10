@@ -9,9 +9,4 @@ public class Cicd02BootApplication {
     public static void main(String[] args) {
         SpringApplication.run(Cicd02BootApplication.class, args);
     }
-
-    void contextLoads() {
-        throw new RuntimeException("Fail!");
-    }
-
 }
