@@ -2,7 +2,7 @@ version: '3'
 
 services:
   app:
-    image: chan7674/myapp
+    image: jangheejung/myapp:latest
     container_name: myapp
     ports:
       - "8080:8080"
